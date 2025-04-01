@@ -1,0 +1,18 @@
+{
+  "app": "make clean && make install && python3 cdk/app.py",
+  "context": {
+    "tags": {
+      "Owner": "Santiago Garcia and Daniel Ayala",
+      "Source": "https://github.com/san99tiago/aws-angular-demo",
+      "Usage": "AWS Angular Demo on S3 with Cloudfront"
+    },
+    "app_config": {
+      "prod": {
+        "main_resources_name": "aws-angular-demo",
+        "deployment_environment": "prod",
+        "s3_bucket_prefix": "angular-demo-prod",
+        "log_level": "DEBUG"
+      }
+    }
+  }
+}
